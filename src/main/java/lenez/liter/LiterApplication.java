@@ -3,6 +3,7 @@ package lenez.liter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import lenez.liter.menu.MenuApp;
 
 @SpringBootApplication
 public class LiterApplication implements CommandLineRunner {
@@ -13,6 +14,7 @@ public class LiterApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Hello, World!");
+		MenuApp menu = new MenuApp();
+		menu.run();
 	}
 }
