@@ -54,6 +54,9 @@ public class MenuApp {
                     case 5:
                         handleListBooksByLanguage();
                         break;
+                    case 6:
+                        System.out.println("Goodbye!");
+                        return;
                     default:
                         System.out.println("Invalid option");
                         break;
@@ -146,5 +149,6 @@ public class MenuApp {
         System.out.println("3. View authors");
         System.out.println("4. View alive authors in a specific year");
         System.out.println("5. View books by language");
+        System.out.println("6. Exit");
     }
 }
